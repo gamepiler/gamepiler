@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    padding: 10vh;
+    text-align: center;
+    background: #666;
+    color: white;
+    font-size: 30px;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    
+    height: 70vh;
+    display: inline-block;
+    
+}
+
+#left {
+    float: left;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 40%;
+    background-color: aqua;
+    text-align: center;
+   
+}
+
+#right{
+    float:left;
+    width: 60%;
+    background-color: beige;
+    
+}
+
+#login {
+    width: 100px;
+    border-radius: 10%;
+}
+
+#about p {
+    text-align: center;
+}
+
+#wrapper{
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+    #left, #right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
