@@ -1,0 +1,41 @@
+.signup-form {
+    max-width: 500px;
+    margin: auto;
+    border:1px solid #666;
+    padding:2rem;
+}
+
+label {
+    display: block;
+}
+
+.signup-form input {
+    display: block;
+    width: 100%;
+}
+
+#sendBtn {
+    border: 0;
+    padding: .5rem;
+    background-color:#4CAF50;
+    color:#fff;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    margin: 1rem 0;
+    margin: auto;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+#signup-div{
+    height: 100%;
+    padding-top: 25px;
+}
+
+.auto-align {
+    margin:auto;
+}
+
+
+

@@ -4,9 +4,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layoutStyles.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-   
+    <link rel="stylesheet" href="modalStyles.css">
+
     <title>Conversions</title>
 </head>
 
@@ -17,47 +18,92 @@
 
 
     <div id="wrapper">
+
         <div id="left" class="container-side">
             <h3>About</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-               Duis ut egestas enim. Curabitur dapibus viverra convall.
-               Sed blandit, nulla in consectetur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis ut egestas enim. Curabitur dapibus viverra convall.
+                Sed blandit, nulla in consectetur.</p>
 
         </div>
 
         <div id="right" class="container-side">
 
-            <form name="login">
-            <table>
-                <tr>
-                    <td><label>email:</label></td>
-                    <td><input type="email" placeholder="Enter Email" name="email"required></td>
-                </tr>
-                <tr>
-                    <td><label>password:</label></td>
-                    <td><input type="password" placeholder="Enter Password" name="email" required></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input id="login" type="button" value="login"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><a href="sign_up.html"><label style="color: blue;">sign up!</lable></a></td>
-                </tr>
-            </table>
-        
-                
-                
-                
-            </form>
+            <!-- Trigger/Open The Modal -->
+            <input type="button" value="Login" id="myBtn">
+            <label><a href="signup/sign_up.html" style="color:dodgerblue">Sign up</a></label>
 
-        </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
 
-    </div>
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
 
 
-    <footer class="footer">
+                    <form>
+                        <div class="container">
+                            <h1>Sign In</h1>
+                            <hr>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                                Remember me
+                            </label>
+
+                            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                                    Privacy</a>.</p>
+                            <br />
+
+                            <div class="clearfix">
+                                <button type="button" class="cancelbtn" Style="background-color:#f44336;">Cancel</button>
+                                <button type="submit" class="signupbtn">Sign In</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div> <!-- End of right-container -->
+
+    </div> <!-- End of Wrapper-->
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <footer class="site-footer">
         <h1>Footer!</h1>
     </footer>
 

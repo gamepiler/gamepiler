@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 100%;
+    padding: 50px;
+    text-align: center;
+    background: #666;
+    color: white;
+    font-size: 30px;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666;
+    color: white;
+    text-align: center;
+}
+
+.container-top{
+    width: 100%;
+    float: none;
+    padding: 10px;
+    background-color:  rgb(247, 245, 245);
+}
+.container-side {
+    height: 70vh;
+    display: inline-block;
+}
+.fb_button {
+    background-color: #395995;
+    color:#fff;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+.goog_button {
+    margin-top: 10px;
+    background-color: #E24636;
+    color:#fff;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#left {
+    float: left;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 40%;
+    background-color: rgb(247, 245, 245);
+    /* background-color: aqua; */
+}
+
+#right{
+    float:left;
+    width: 60%;
+    background-color: rgb(247, 245, 245);
+    /* background-color: #E24636; */
+}
+.shift {
+    margin-left: 80px;
+}
+
+
+#login {
+    width: 100px;
+    border-radius: 10%;
+}
+
+#about p {
+    text-align: center;
+}
+
+#wrapper{
+    text-align: left;
+    height: 100%;
+    background-color:rgb(247, 245, 245);
+}
+
+@media screen and (max-width: 800px) {
+    #left, #right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+.container {
+    padding: 16px;
+  }
+
+
+#signup_button{
+    color: blue;
+}
+
+.site-footer {
+    width: 100%;
+    padding-bottom: 40px;
+    background-color: #666;
+    color: white;
+    text-align: center;
+  }
