@@ -1,70 +1,89 @@
-* {
+
+
+html,body {
+    /* height: 100%; */
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /*The font for everything*/
+    background-color: #f1f1f1;
+ }
+ 
+ /* Style the header */
+ header {
+    height: 15%;
+    background-color: #666;
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    /* -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; */
+    margin: 10px;
+    background: #ccc;
+    padding: 20px;
+    width: 30vh;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    min-height: 100%;
+    /* display: -webkit-flex; */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    /* background-color: DodgerBlue; */
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
     padding: 0;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-    padding: 10vh;
-    text-align: center;
-    background: #666;
-    color: white;
-    font-size: 30px;
-}
-
-
-.footer {
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    margin: 20px auto 20px auto;
+    min-height: 100px;
+    /* height: 75vh; */
+    width: 50vw;
+    min-width: 350px;
+    /* border: 2px solid black; */
+  }
+  
+  /* Style the footer */
+  footer {
     position: fixed;
-    left: 0;
     bottom: 0;
-    height: 10vh;
+    left:0;
+    right:0;
+    height: 50px;
     width: 100%;
-    background-color: red;
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
     color: white;
-    text-align: center;
-}
-
-.container {
-    
-    height: 70vh;
-    display: inline-block;
-    
-}
-
-#left {
-    float: left;
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 40%;
-    background-color: aqua;
-    text-align: center;
-   
-}
-
-#right{
-    float:left;
-    width: 60%;
-    background-color: beige;
-    
-}
-
-#login {
-    width: 100px;
-    border-radius: 10%;
-}
-
-#about p {
-    text-align: center;
-}
-
-#wrapper{
-    text-align: center;
-}
-@media screen and (max-width: 800px) {
-    #left, #right {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 500px) {
+    section {
+      /* -webkit-flex-direction: column; */
+      flex-direction: column;
+      
+      
     }
   }
+
+  #about {
+      padding: 25px 50px 0px 50px;
+      min-width: 300px;
+  }
+

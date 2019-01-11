@@ -1,0 +1,59 @@
+.signup-form {
+    max-width: 600px;
+    margin: auto;
+    border:1px solid #666;
+    padding:2rem;
+}
+
+/* label {
+    display: block;
+} */
+
+.signup-form input {
+    /* display: block; */
+    width: 100%;
+}
+
+#sendBtn {
+    display: block;
+    border: 0;
+    padding: .5rem;
+    background-color:#4CAF50;
+    color:#fff;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    margin: 1rem 0;
+    margin: auto;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+input[type='checkbox'] {
+    
+    margin-top: 20px;
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:5px;
+    /* border:2px solid rgb(15, 15, 15); */
+}
+input[type='checkbox']:checked {
+    background: #4CAF50;
+}
+
+#signup-div{
+    height: 100%;
+    padding-top: 25px;
+    min-height: 500px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.auto-align {
+    margin:auto;
+}
+
+
+
