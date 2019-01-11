@@ -1,112 +1,56 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="layoutStyles.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="modalStyles.css">
-
-    <title>Conversions</title>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="signup_styles.css">
+<link rel="stylesheet" href="about_styles.css">
 </head>
-
 <body>
-    <div class="header">
-        <h1>Gamepiler.com</h1>
+
+<header>
+  <h2>Gamepiler.com</h2>
+</header>
+
+<section>
+    
+  <article id="about">
+        <h1>GamePiler</h1>
+        <p>Track game you wown, played, and beaten.</p>
+        <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum pretium bibendum. Ut varius elit quis finibus condimentum. Morbi laoreet metus eget tellus dictum elementum. Quisque luctus mi id velit molestie facilisis. Sed semper tempor molestie. Maecenas a turpis congue, vehicula ex in, ullamcorper mi. Aliquam erat volutpat. Duis suscipit bibendum enim eu porta. Vestibulum elementum nisi nisl, id dictum diam auctor sed. Nulla sit amet neque vel est vehicula sollicitudin id at dui. Cras sit amet eros vo</p>
+  </article>
+  
+  <article>
+    <div id="signup-div">
+        <form class="signup-form">
+            <h1>
+                Sign Up
+            </h1>
+            <label>Username:</label>
+            <input type="username" name="username-form">
+
+            <label>Email:</label>
+            <input type="email" name="email-form">
+
+            <label>password:</label>
+            <input type="password" name="pswd-form">
+
+            <label>confirm password:</label>
+            <input type="password" name="confirm-form">
+
+            <input type="checkbox" name="robot" value="robot" id="robotCheckBox">  <label>I am not a robot</label>
+
+            <input type="button" value="submit" id="sendBtn" name="btn-form">
+        </form>
     </div>
+  </article>
+</section>
 
-
-    <div id="wrapper">
-
-        <div id="left" class="container-side">
-            <h3>About</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis ut egestas enim. Curabitur dapibus viverra convall.
-                Sed blandit, nulla in consectetur.</p>
-
-        </div>
-
-        <div id="right" class="container-side">
-
-            <!-- Trigger/Open The Modal -->
-            <input type="button" value="Login" id="myBtn">
-            <label><a href="signup/sign_up.html" style="color:dodgerblue">Sign up</a></label>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-
-
-                    <form>
-                        <div class="container">
-                            <h1>Sign In</h1>
-                            <hr>
-
-                            <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="email" required>
-
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
-
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
-                                Remember me
-                            </label>
-
-                            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
-                                    Privacy</a>.</p>
-                            <br />
-
-                            <div class="clearfix">
-                                <button type="button" class="cancelbtn" Style="background-color:#f44336;">Cancel</button>
-                                <button type="submit" class="signupbtn">Sign In</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-
-        </div> <!-- End of right-container -->
-
-    </div> <!-- End of Wrapper-->
-
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-
-    <footer class="site-footer">
-        <h1>Footer!</h1>
-    </footer>
+<footer>
+  <p>Footer</p>
+</footer>
 
 </body>
-
 </html>
