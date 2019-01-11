@@ -1,59 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Home | Gamepiler.com</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="signup_styles.css">
-<link rel="stylesheet" href="about_styles.css">
+  <title>Home | Gamepiler.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="signup_styles.css">
+  <link rel="stylesheet" href="about_styles.css">
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <link rel="stylesheet" href="modalStyles.css">
+
 </head>
+
 <body>
+  <!-- ============================== HEADER ============================== -->
+  <header>
+    <h2>Gamepiler.com</h2>
+  </header>
 
-<header>
-  <h2>Gamepiler.com</h2>
-</header>
+  <section>
 
-<section>
-    
-  <article id="about">
-        <h1>GamePiler</h1>
-        <p>Track game you wown, played, and beaten.</p>
-        <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum pretium bibendum. Ut varius elit quis finibus condimentum. Morbi laoreet metus eget tellus dictum elementum. Quisque luctus mi id velit molestie facilisis. Sed semper tempor molestie. Maecenas a turpis congue, vehicula ex in, ullamcorper mi. Aliquam erat volutpat. Duis suscipit bibendum enim eu porta. Vestibulum elementum nisi nisl, id dictum diam auctor sed. Nulla sit amet neque vel est vehicula sollicitudin id at dui. Cras sit amet eros vo</p>
+    <!-- ============================== LEFT ( About section) ============================== -->
+    <article id="about">
+      <h1>GamePiler</h1>
+      <p>Track game you wown, played, and beaten.</p>
+      <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum pretium bibendum. Ut varius elit quis
+        finibus condimentum. Morbi laoreet metus eget tellus dictum elementum. Quisque luctus mi id velit molestie
+        facilisis. Sed semper tempor molestie. Maecenas a turpis congue, vehicula ex in, ullamcorper mi. Aliquam erat
+        volutpat. Duis suscipit bibendum enim eu porta. Vestibulum elementum nisi nisl, id dictum diam auctor sed.
+        Nulla sit amet neque vel est vehicula sollicitudin id at dui. Cras sit amet eros vo</p>
 
-        <!-- Add the button and the modal here for making it mobile friendly  -->
+      <!-- Add the button and the modal here for making it mobile friendly  -->
+      <!-- Trigger/Open The Modal -->
+      <input type="button" value="Login" id="myBtn">
 
-  </article>
-  
-  <article>
-    <div id="signup-div">
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+
+          <form>
+            <div class="container">
+              <h1>Sign In</h1>
+              <hr>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                Remember me
+              </label>
+
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                  Privacy</a>.</p>
+              <br />
+
+              <div class="clearfix">
+                <button type="button" class="cancelbtn" Style="background-color:#f44336;">Cancel</button>
+                <button type="submit" class="signupbtn">Sign In</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <script>
+          // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+    </article>
+
+    <!-- ============================== RIGHT (Sign up) ============================== -->
+    <article>
+      <div id="signup-div">
         <form class="signup-form">
-            <h1>
-                Sign Up
-            </h1>
-            <label>Username:</label>
-            <input type="username" name="username-form">
+          <h1>
+            Sign Up
+          </h1>
+          <label>Username:</label>
+          <input type="text" name="username-form">
 
-            <label>Email:</label>
-            <input type="email" name="email-form">
+          <label>Email:</label>
+          <input type="email" name="email-form">
 
-            <label>password:</label>
-            <input type="password" name="pswd-form">
+          <label>password:</label>
+          <input type="password" name="pswd-form">
 
-            <label>confirm password:</label>
-            <input type="password" name="confirm-form">
+          <label>confirm password:</label>
+          <input type="password" name="confirm-form">
 
-            <input type="checkbox" name="robot" value="robot" id="robotCheckBox">  <label>I am not a robot</label>
+          <input type="checkbox" name="robot" value="robot" id="robotCheckBox"> <label>I am not a robot</label>
 
-            <input type="button" value="submit" id="sendBtn" name="btn-form">
+          <input type="button" value="submit" id="sendBtn" name="btn-form">
         </form>
-    </div>
-  </article>
-</section>
+      </div>
+    </article>
+  </section>
 
-<footer>
-  <p>Footer</p>
-</footer>
+  <!-- ============================== FOOTER ============================== -->
+  <footer>
+    <p>Footer</p>
+  </footer>
 
 </body>
+
 </html>

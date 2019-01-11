@@ -56,6 +56,7 @@ html,body {
     width: 50vw;
     min-width: 350px;
     /* border: 2px solid black; */
+    padding-bottom: 60px;
   }
   
   /* Style the footer */
@@ -81,7 +82,20 @@ html,body {
       
     }
   }
-
+#myBtn  {
+    display: block;
+    border: 0;
+    padding: .5rem;
+    background-color:rgb(242, 203, 30);
+    font-size: 2rem;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    margin: 1rem 0;
+    margin: auto;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
   #about {
       padding: 25px 50px 0px 50px;
       min-width: 300px;
