@@ -46,6 +46,7 @@ input[type='checkbox']:checked {
 #signup-div{
     height: 100%;
     padding-top: 25px;
+    min-height: 500px;
 }
 
 .auto-align {
