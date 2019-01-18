@@ -51,24 +51,24 @@ html,body {
     flex: 3;
     background-color: #f1f1f1;
     margin: 20px auto 20px auto;
-    min-height: 100px;
+    min-height: 50vh;
     /* height: 75vh; */
     width: 50vw;
     min-width: 350px;
     /* border: 2px solid black; */
     padding-bottom: 60px;
+    
   }
   
   /* Style the footer */
   footer {
-    position: fixed;
+    margin-top:60px; 
     bottom: 0;
     left:0;
     right:0;
-    height: 50px;
     width: 100%;
     background-color: #777;
-    padding: 10px;
+    padding: 20px 0px 50px 0px;
     text-align: center;
     color: white;
   }
@@ -97,7 +97,7 @@ html,body {
     text-transform: uppercase;
 }
   #about {
-      padding: 25px 50px 0px 50px;
+      padding: 25px 40px 0px 40px;
       min-width: 300px;
   }
 
